@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>AdGoOut</title>
+    <link rel="stylesheet" href="./popup.css">
+
+    <!-- JavaScript and HTML must be in separate files for security. -->
+    <script src="./popup.js"></script>
+</head>
+
+<body>
+<div class="open-box" id="openBox">
+    <div class="open-back"></div>
+    <span class="open-text">OP-ToolBox</span>
+    <img class="open-animate open-img" src="../img/new-logo.png" alt="">
+
+
+</div>
+<video id="bk-video" src="" autoplay muted loop></video>
+<div class="popup">
+    <div class="title">
+        <img class="myRoutate" src="../img/logo.png" alt="">
+        <span class="title-text">OP-ToolBox</span>
+    </div>
+
+    <form name="pupupForm" id="formId">
+        <div class="options vip-options">
+            <div class="op-item">
+                <div class="op-content">
+                    <label for="opStart">「VIP」原神 启动！</label>
+                    <div class="op-tips">
+                        一键开玩「OP必开」
+                    </div>
+                </div>
+                <div class="op-ck">
+                    <input type="checkbox" id="opStart" name="opStart">
+                </div>
+                <video class="vip-video-background" src="../movie/gold.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+        <div class="options">
+            <div class="op-item">
+                <div class="op-content">
+                    <label for="imageMagic">记事本</label>
+                    <div class="op-tips">
+                        可在网页内随意拖拽
+                    </div>
+                </div>
+                <div class="op-ck">
+                    <input type="checkbox" id="noteBook" name="noteBook">
+                </div>
+            </div>
+            <div class="hide-menu">
+                <div class="note-book-setting">
+                    <div class="note-book-setting-title">编辑内容 <span id="noteBookInit" class="note-book-init">还原</span></div>
+                    <textarea id="noteBookValue" class="note-book-textarea" rows="4"></textarea>
+                    <div class="flex-box">
+                        <div class="flex-colum-box flex-auto" style="margin-right: 5px">
+                            <div class="note-book-setting-title">
+                                背景底色
+                                <input type="checkbox" id="noteBookBackGroundBlur" name="noteBookBackGroundBlur">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-box">
+                        <div class="flex-colum-box flex-auto" style="margin-right: 5px">
+                            <div class="note-book-setting-title">字体颜色</div>
+                            <input type="color" class="note-book-color" id="noteBookColor" name="noteBookColor" value="#000000" />
+                        </div>
+                        <div class="flex-colum-box flex-auto" style="margin-right: 5px">
+                            <div class="note-book-setting-title"><span class="hover-hide">阴影颜色</span><span class="hover-show" id="noteBookShadowColorClear">清除</span></div>
+                            <input type="color" class="note-book-color" id="noteBookShadowColor" name="noteBookShadowColor" />
+                        </div>
+                        <div class="flex-colum-box flex-auto">
+                            <div class="note-book-setting-title">字体大小</div>
+                            <input type="number" class="note-book-input" id="noteBookFontSize" name="noteBookFontSize" value="14" />
+                        </div>
+                    </div>
+                    <div class="color-history" id="colorHistory"></div>
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="op-item">
+                <div class="op-content">
+                    <label for="imageMagic">倒计时</label>
+                    <div class="op-tips">
+                        RUN!
+                    </div>
+                </div>
+                <div class="op-ck">
+                    <input type="checkbox" id="countdown" name="countdown">
+                </div>
+            </div>
+            <div class="hide-menu">
+                <div class="deskTop-notifi">
+                    桌面提醒
+                    <input type="checkbox" id="countDownDeskTopNotifi" name="countDownDeskTopNotifi">
+                </div>
+                <div class="custom-time">
+                    <input class="custom-time-title" key="1" type="text" value="下班咯"></input>
+                    :
+                    <input class="custom-time-input" key="1" type="text" value="17:30">
+                </div>
+                <div class="custom-time">
+                    <input class="custom-time-title" key="2" type="text" value="结束时间"></input>
+                    :
+                    <input class="custom-time-input" key="2" type="text" value="">
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="op-item">
+                <div class="op-content">
+                    <label for="adRemove">过滤搜索内容广告</label>
+                    <div class="op-tips">
+                        支持Bing、Baidu
+                    </div>
+                </div>
+                <div class="op-ck">
+                    <input type="checkbox" id="adRemove" name="adRemove">
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="op-item">
+                <div class="op-content">
+                    <label for="imageMagic">图片缩小</label>
+                    <div class="op-tips">
+                        图片缩小
+                    </div>
+                </div>
+                <div class="op-ck">
+                    <input type="checkbox" id="imageMagic" name="imageMagic">
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="op-item">
+                <div class="op-content">
+                    <label for="zhihu">知乎优化</label>
+                    <div class="op-tips">
+                        阅读版知乎
+                    </div>
+                </div>
+                <div class="op-ck">
+                    <input type="checkbox" id="zhihu" name="zhihu">
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="op-item">
+                <div class="op-content">
+                    <label for="imageMagic">背景</label>
+                    <div class="op-tips">
+                        设置OP-ToolBox背景
+                    </div>
+                </div>
+                <div class="op-ck">
+                    <input type="checkbox" id="popupBackGround" name="popupBackGround">
+                </div>
+            </div>
+            <div class="hide-menu">
+                <div id="popupBackGroundRadioBox">
+                    <input type="radio" name="popupBackGroundRadio" value="0">无
+                    <input type="radio" name="popupBackGroundRadio" value="1">刻晴
+                    <input type="radio" name="popupBackGroundRadio" value="2">优菈
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+
+</html>
