@@ -3,7 +3,7 @@ OP-ToolBox是一个Chrome浏览器插件，里面有一些奇奇怪怪的功能 
 - [使用说明](#使用说明)
 - [更新日志](#更新日志)
 	- [v1.1.4](#v1.1.4)
-## 使用说明 :love_letter:
+## 使用说明
 <h3>1.点击下载</h3>
 <img width="445" alt="image" src="https://github.com/WanGODW/OP-ToolBox/assets/108512706/4683cf87-541a-4a0f-a1df-98cce7adc382">
 <h3>2.解压压缩包</h3>
