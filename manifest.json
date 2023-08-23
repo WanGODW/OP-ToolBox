@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "OP-ToolBox",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "网页工具箱，里面一些奇怪的功能",
   "icons": {
     "16": "./img/new-logo.png",

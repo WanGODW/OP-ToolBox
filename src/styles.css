@@ -114,6 +114,10 @@
     border-color: #f09819;
     backdrop-filter: blur(1.5px);
 }
+
+.note-book-drag:hover .note-book-box{
+    border-color: #f09819;
+}
 .note-book-text {
     width: 100%;
     height: 100%;
