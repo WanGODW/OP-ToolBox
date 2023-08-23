@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "OP-ToolBox",
+  "version": "1.1.4",
+  "description": "网页工具箱，里面一些奇怪的功能",
+  "icons": {
+    "16": "./img/new-logo.png",
+    "32": "./img/new-logo.png",
+    "48": "./img/new-logo.png",
+    "128": "./img/new-logo.png"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["src/styles.css"],
+      "js": ["src/utils.js","src/all.js"]
+    },
+    {
+      "matches": ["https://*.baidu.com/*", "https://*.bing.com/*", "https://*.zhihu.com/*"],
+      "js": ["src/main.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": ["<all_urls>"],
+      "resources": ["/fonts/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup.html"
+  },
+  "permissions": ["storage", "tabs" , "notifications"]
+}
