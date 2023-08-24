@@ -16,4 +16,5 @@ OP-ToolBox是一个Chrome浏览器插件，里面有一些奇奇怪怪的功能 
 <img width="477" alt="image" src="https://github.com/WanGODW/OP-ToolBox/assets/108512706/c4faac5a-a5f1-4a1f-abe8-66ba7927586b">
 
 ## 更新日志
-### v1.1.4
+### v1.1.5
+- popup样式迭代更新
