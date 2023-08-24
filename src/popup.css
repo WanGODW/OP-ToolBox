@@ -19,7 +19,7 @@
         opacity: 1;
     }
 
-    70% {
+    80% {
         opacity: 1;
         z-index: 999999;
     }
@@ -36,11 +36,11 @@
     }
 
     15% {
-        transform: rotate(25deg);
+        transform: rotate(15deg);
     }
 
     40% {
-        transform: rotate(-10deg);
+        transform: rotate(-5deg);
     }
 
     60%{
@@ -60,18 +60,19 @@
 }
 @keyframes openBackAnimate {
     0%{
-        /*background-color: #C34624;*/
-        /*transform: scale(8);*/
-        transform: scale(2);
+        transform: scale(2.5);
     }
-    80%{
+    70%{
         opacity: 1;
         transform: scale(1.8);
-        /*background-color: #f09819;*/
     }
-    95%{
+    85%{
         opacity: 1;
         transform: scale(1.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.2);
     }
 }
 
@@ -418,7 +419,7 @@ body{
     opacity: 1;
     font-family: smiley-sans;
     animation-name: openShow;
-    animation-duration: 1.5s;
+    animation-duration: 1.8s;
     animation-iteration-count: 1;
     animation-fill-mode:forwards;
     overflow: hidden;
@@ -427,10 +428,10 @@ body{
     margin-top: 38px;
     font-size: 28px;
     font-weight: bold;
-    -webkit-text-stroke:1px #f9d423;
+    -webkit-text-stroke:1px #f00;
     color: transparent;
     animation-name: openTextAnimate;
-    animation-duration: 1.4s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode:forwards;
 }
@@ -438,7 +439,7 @@ body{
     margin-top: 50px;
     width: 140px;
     animation-name: routateLeftAndRight;
-    animation-duration: 1.4s;
+    animation-duration: 1.8s;
     animation-iteration-count: 1;
     animation-fill-mode:forwards;
 }
@@ -450,13 +451,12 @@ body{
     background: linear-gradient(to top, #f83600, #f9d423);
     left: 92px;
     top: 155px;
-    /*transform: scale(8);*/
-    opacity: 0.9;
+    opacity: 0.7;
     animation-name: openBackAnimate;
-    animation-duration: 1.4s;
+    animation-duration: 1.2s;
     animation-iteration-count: 1;
     animation-fill-mode:forwards;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-out;
 }
 input[type=checkbox] {
     cursor: pointer;
