@@ -16,7 +16,7 @@
     {
       "matches": ["<all_urls>"],
       "css": ["src/styles.css"],
-      "js": ["src/utils.js","src/all.js"]
+      "js": ["src/utils.js","src/all.js","src/bilibiliHelper/content.js"]
     },
     {
       "matches": ["https://*.baidu.com/*", "https://*.bing.com/*", "https://*.zhihu.com/*"],
