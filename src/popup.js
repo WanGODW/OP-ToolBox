@@ -1,9 +1,14 @@
 onload = function (){
     initValue()
-    setTimeout(()=>{
-        $('openBox').innerHTML = ''
-        $('openBox').className = ''
-    },3000)
+    importBHelper()
+    if(Number(new Date().getTime().toString().slice(-1)) < 3){
+        $('openBox').style.display = 'flex'
+        setTimeout(()=>{
+            $('openBox').innerHTML = ''
+            $('openBox').className = ''
+        },3000)
+    }
+
 
     // 初始化回显checkbox勾选，并绑定checkbox点击事件
     function initValue(){
@@ -290,5 +295,12 @@ onload = function (){
             html += `<div class="color-history-item" color="${colorList[i]}" style="background-color: ${colorList[i]}"></div>`
         }
         $('colorHistory').innerHTML = html
+    }
+
+    function importBHelper(){
+        var JSElement=document.createElement("script");
+        JSElement.setAttribute("type","text/javascript");
+        JSElement.setAttribute("src","./bilibiliHelper/popup.js");
+        document.body.appendChild(JSElement);
     }
 }

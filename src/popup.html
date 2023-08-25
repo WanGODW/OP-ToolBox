@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>AdGoOut</title>
+    <title>OP-ToolBox</title>
     <link rel="stylesheet" href="./popup.css">
+    <link rel="stylesheet" href="./bilibiliHelper/style.css">
 
     <!-- JavaScript and HTML must be in separate files for security. -->
     <script src="./popup.js"></script>
@@ -15,8 +16,6 @@
     <div class="open-back"></div>
     <span class="open-text">OP-ToolBox</span>
     <img class="open-animate open-img" src="../img/new-logo.png" alt="">
-
-
 </div>
 <video id="bk-video" src="" autoplay muted loop></video>
 <div class="popup">
@@ -38,6 +37,103 @@
                     <input type="checkbox" id="opStart" name="opStart">
                 </div>
                 <video class="vip-video-background" src="../movie/gold.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+        <div class="options">
+            <div class="op-item">
+                <div class="op-content">
+                    <label for="imageMagic">Bilibili小助手</label>
+                    <div class="op-tips">
+                        关注视频数据
+                    </div>
+                </div>
+                <div class="op-ck">
+                    <input type="checkbox" id="biliHelper" name="biliHelper">
+                </div>
+            </div>
+            <div class="hide-menu">
+                <div id="box-content">
+                    <!-- 绑定view -->
+                    <div id="need-bind">
+                        <div class="text18">还未绑定bilibili帐号</div>
+                        <img class="img" src="../img/icon-auth.png" alt="">
+                        <div class="tip-box">
+                            <div>1.打开bilibili，登录帐号</div>
+                            <div>2.打开插件，点击绑定</div>
+                        </div>
+                        <div id="bind">
+                            绑定
+                        </div>
+                        <span id="golink">跳转bilibili>></span>
+                    </div>
+                    <!-- 个人信息view -->
+                    <div id="user-box">
+                        <div class="base-info-flex" id="base-info-flex">
+                            <div id="exit" class="exit-box">退出</div>
+                            <div id="vip-show-box">
+                                <img id="vip-show" src="" alt="">
+                            </div>
+                            <div class="base-info-left">
+                                <div class="avatar-box">
+                                    <img id="avatar" src="../img/icon-auth.png" alt="">
+<!--                                    <img id="avatar-border" src="" alt="">-->
+                                    <div id="avatar-update">更新</div>
+                                    <span id="level"></span>
+                                </div>
+
+                                <div class="name-box">
+                                    <div id="name">-</div>
+                                </div>
+                            </div>
+                            <div class="base-info">
+                                <div class="base-item">
+                                <span class="base-count">
+                                    <span class="base-count-handel" id="fans-count">-</span>
+                                    <span class="base-count-real" id="fans-count-real">1234</span>
+                                    <span class="change-num" id="fans-count-change"></span>
+                                </span>
+                                    <span class="base-title">粉丝数</span>
+                                </div>
+                                <div class="base-item">
+                                <span class="base-count">
+                                    <span class="base-count-handel" id="like-count">-</span>
+                                    <span class="base-count-real" id="like-count-real">1234</span>
+                                    <span class="change-num" id="like-count-change"></span>
+                                </span>
+                                    <span class="base-title">获赞数</span>
+                                </div>
+                                <div class="base-item">
+                              <span class="base-count">
+                                <span class="base-count-handel" id="view-count">-</span>
+                                <span class="base-count-real" id="view-count-real">1234</span>
+                                <span class="change-num" id="view-count-change"></span>
+                              </span>
+                                    <span class="base-title">播放数</span>
+                                </div>
+                            </div>
+                            <span id="golink2">跳转bilibili>></span>
+                        </div>
+                        <div class="bind-video-box" id="bind-video-view">
+                            <span class="bind-video" id="bind-video">绑定关注视频</span>
+                            <div class="tip-box">
+                                <div>1.打开视频</div>
+                                <div>2.打开插件，绑定关注视频</div>
+                            </div>
+                        </div>
+                        <div class="video-box" id="video-box-view">
+                            <div id="video-box-list">
+                            </div>
+                            <div class="bind-video-box-small" id="bind-video-box-small">
+                                <div class="bind-video-small" id="bind-video">绑定关注视频</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="error-tip-box">
+                        <div id="error-tip"></div>
+                        <!-- 绑定失败，请尝试刷新页面或重新打开插件 -->
+                    </div>
+                </div>
             </div>
         </div>
         <div class="options">
