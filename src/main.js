@@ -41,11 +41,15 @@ function getDoms () {
     // baidu
     var baiduAdDoms = document.querySelectorAll('div[data-appinfo]')
     var baiduAdSmall = document.getElementsByClassName('f13 c-gap-top-xsmall')
+
+    var tiebaAd1 = document.querySelectorAll('[ad-dom-img]')
+    var tiebaAd2 = document.getElementsByClassName('right_section')
+
     let baiduAdSmallParent = []
     for (let i = 0; i < baiduAdSmall.length; i++) {
         baiduAdSmallParent.push(baiduAdSmall[i].parentElement)
     }
-    return [...bingAdDoms, ...baiduAdDoms, ...baiduAdSmallParent, ...bingDeeplinkDoms]
+    return [...bingAdDoms, ...baiduAdDoms, ...baiduAdSmallParent, ...bingDeeplinkDoms, ...tiebaAd1, ...tiebaAd2]
 }
 function getZhihuDoms(){
     // zhihu
