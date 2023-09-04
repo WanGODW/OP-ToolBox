@@ -15,8 +15,9 @@ OP-ToolBox是一个Chrome浏览器插件，里面有一些奇奇怪怪的功能 
 <img width="477" alt="image" src="https://github.com/WanGODW/OP-ToolBox/assets/108512706/c4faac5a-a5f1-4a1f-abe8-66ba7927586b">
 
 ## 更新日志
-### v1.1.5
-- 弹窗样式调整
+### v1.1.7（2023-09-04）
+- 【过滤广告搜索内容】支持贴吧中广告的过滤
 ### v1.1.6（2023-08-25）
 - 新增【Bilibili小助手】功能，更快浏览视频数据
-
+### v1.1.5
+- 弹窗样式调整
